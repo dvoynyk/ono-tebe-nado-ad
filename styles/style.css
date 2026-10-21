@@ -1,26 +1,46 @@
-
-body {
-    margin: 0 auto; /* Центрируем страницу */
-    max-width: 1100px; /* Ограничиваем ширину как в Figma */
-    background-color: #ffffff;
-}
-
-
 .header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 30px 50px; 
 }
 
 .header_menu {
 }
 
 .header_menu-list {
+    display: flex;
+    gap: 15px; 
+    list-style-type: circle; 
+    list-style-position: inside; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.header_menu-list a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.header_menu-list li:first-child a {
+    text-decoration: none; 
 }
 
 .header_logo {
+    display: block; 
+    width: 150px; 
 }
 
+
 .header_address {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px; 
+    justify-self: end; 
+    align-items: flex-start; 
+    gap: 2px; 
+    font-style: normal; 
 }
 
 .cover {
@@ -32,62 +52,27 @@ body {
     padding: 50px;
 }
 
-.cover_title {
-}
-
-.cover_description {
-}
-
-.cover_description_button {
-}
-
-.lots {
+.cover_title { }
+.cover_description { }
+.cover_description_button { }
+.lots { 
     margin-top: 80px; 
     margin-bottom: 80px; 
-    padding: 0 50px;
-}
-
-.lots_title {
-}
-
-.lots_list {
-}
-
-.lots_card {
-}
-
-.lots_more {
-}
-
-
-.about {
+    padding: 0 50px; }
+.lots_title { }
+.lots_list { }
+.lots_card { }
+.lots_more { }
+.about { 
     margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0 50px;
-}
-
-.about_logo-container {
-}
-
-.about_text-container {
-}
-
-.about_paragraphs {
-}
-
-
-.footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.footer_address {
-}
-
-.footer_menu {
-}
-
-.footer_socials {
-}
+    margin-bottom: 50px; 
+    padding: 0 50px; }
+.about_logo-container { }
+.about_text-container { }
+.about_paragraphs { }
+.footer { 
+    padding: 40px 50px;
+ }
+.footer_address { }
+.footer_menu { }
+.footer_socials { }
