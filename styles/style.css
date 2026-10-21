@@ -44,17 +44,82 @@
 }
 
 .cover {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('/images/cover.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 757px;
     padding: 50px;
+    position: relative;   
 }
 
-.cover_title { }
-.cover_description { }
-.cover_description_button { }
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.cover_title { 
+    text-transform:uppercase;
+    color: #ffffff; 
+
+    font-size: 100px; 
+    line-height: 1.15;
+    letter-spacing: 0.3em; 
+    font-weight: 700; 
+    
+    position: relative;
+    z-index: 2;
+    
+    margin-top: 165px; 
+    margin-bottom: 0; 
+}
+
+.cover_title-text{
+    display: block;
+}
+
+.left{
+    text-align: start;
+} 
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: end;
+}
+.cover_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px; 
+ }
+
+.cover_description p{
+    word-spacing: 15px;
+    font-size: 22px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.cover_description_button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 15px 30px;
+    color: #fff; 
+    text-transform: uppercase; 
+    font-family: inherit;
+    font-size: 22px; 
+    cursor: pointer;
+ }
 .lots { 
     margin-top: 80px; 
     margin-bottom: 80px; 
